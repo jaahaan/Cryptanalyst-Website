@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as *;
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+.text {
+  margin: 0px 0.5rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  text-align: center;
+  color: var(--primary-text);
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // margin-right: 0.25rem;
+  margin-bottom: 15px;
+  align-items: center;
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--primary-text);
+    border-bottom: 1px solid var(--input-background);
+    padding: 0.75rem;
+
+    &::placeholder {
+      color: var(--placeholder-text);
+    }
+    &:focus {
+      border-bottom: 1px solid var(--linkActive);
+    }
+  }
+}
+
+.cross {
+  height: 40px;
+  width: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--secondary-text) !important;
+}
+// button {
+//   border-radius: 20px;
+//   padding: 8px 12px;
+//   margin-bottom: 10px;
+//   background-color: $web-wash;
+//   text-align: center;
+//   color: var(--placeholder-text);
+//   width: 100%;
+//   &:hover {
+//     color: $primary-text;
+//     background-color: $link;
+//   }
+//   .btn_active {
+//     color: $primary-text;
+//     background-color: $link;
+//   }
+// }
+
+.button:hover {
+  background-color: var(--btnHover);
+  color: aliceblue;
+  transition: 0.3s linear;
+}
+.active {
+  background-color: $link;
+  color: aliceblue;
+}
+.todo {
+  position: relative;
+  margin-top: 1rem;
+  background-color: var(--bg);
+  color: aliceblue;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: flex;
+  gap: 0.5rem;
+}
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+.lineThrough {
+  text-decoration: line-through;
+}
+.time {
+  margin-top: 0.5rem;
+  color: #cdcdcd;
+  font-size: 14px;
+}

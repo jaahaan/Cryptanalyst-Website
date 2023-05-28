@@ -1,0 +1,122 @@
+// Add variables here
+@use "./mixins" as *;
+
+:root {
+  --nav-height: 70px;
+  --bg-secondary: #3e4042;
+  --bg: #18191a;
+  --color-primary: #242526;
+  --headerBg: #ffffff1a;
+  --color-secondary: #65676b;
+  // --linkActive: rgb(196, 208, 57);
+  --linkActive: #268ea0;
+
+  --linkHover: #3d3b3b;
+  --linkColor: #ffffff;
+  --primary-text: #e4e6eb;
+  --secondary-text: #b0b3b8;
+  --c: linear-gradient(var(--linkActive), 0.7);
+  --btnHover: rgb(38, 142, 160);
+  --always-dark-gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  --background-deemphasized: #ffffff1a;
+  --primary-deemphasized-button-background: rgba(196, 209, 56, 0.2);
+  --nav-bar-background: #242526;
+  --nav-bar-background-gradient: linear-gradient(
+    to top,
+    var(--color-primary),
+    rgba(36, 37, 38, 0.9),
+    rgba(36, 37, 38, 0.7),
+    rgba(36, 37, 38, 0.4),
+    rgba(36, 37, 38, 0)
+  );
+
+  --input-background: #3a3b3c;
+  --placeholder-text: #8a8d91;
+  --skeleton: #65676b;
+}
+
+.dark-mode {
+  --bg-secondary: #3e4042;
+  --bg: #18191a;
+  --color-primary: #242526;
+  --headerBg: #ffffff1a;
+  --color-secondary: #65676b;
+  --linkActive: rgb(196, 208, 57);
+  --linkHover: #3d3b3b;
+  --linkColor: #ffffff;
+  --primary-text: #e4e6eb;
+  --secondary-text: #b0b3b8;
+  --c: linear-gradient(var(--linkActive), 0.5);
+  --btnHover: rgba(196, 209, 56, 0.2);
+  --always-dark-gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  --background-deemphasized: #ffffff1a;
+  --primary-deemphasized-button-background: rgba(196, 209, 56, 0.2);
+  --nav-bar-background: #242526;
+  --nav-bar-background-gradient: linear-gradient(
+    to top,
+    var(--color-primary),
+    rgba(36, 37, 38, 0.9),
+    rgba(36, 37, 38, 0.7),
+    rgba(36, 37, 38, 0.4),
+    rgba(36, 37, 38, 0)
+  );
+
+  --input-background: #3a3b3c;
+  --placeholder-text: #8a8d91;
+  --skeleton: #65676b;
+}
+.sepia-mode {
+  --nav-height: 60px;
+  --color-primary: #e4e6eb;
+  --headerBg: #78909c;
+  --color-secondary: #566d7e;
+  --btnHover: #566d7e;
+  --linkActive: rgb(196, 209, 56);
+  --linkHover: rgb(61, 59, 59);
+  --linkColor: #ffffff;
+  --bg-secondary: #e4e6eb;
+  --bg: #f0f2f5;
+  --primary-text: #e4e6eb;
+  --secondary-text: #65676b;
+  --always-dark-gradient: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  --background-deemphasized: #ffffff1a;
+  --primary-deemphasized-button-background: rgba(196, 209, 56, 0.2);
+  --nav-bar-background: #566d7e;
+  --nav-bar-background-gradient: linear-gradient(
+    to top,
+    var(--color-primary),
+    rgba(36, 37, 38, 0.9),
+    rgba(36, 37, 38, 0.7),
+    rgba(36, 37, 38, 0.4),
+    rgba(36, 37, 38, 0)
+  );
+
+  --input-background: #3a3b3c;
+  --placeholder-text: #8a8d91;
+  --skeleton: #65676b;
+}
+
+$titleRed: #bc5d5d;
+$inverseColor: #ffffff;
+$colorWhite: #ffffff;
+
+$accent: #1876f2;
+$link: #59a7ff;
+$grayColor: #3a3a3a;
+$borderColor: #e4e6eb;
+$gray: #3d3b3b;
+$bgWhite: #ffffff;
+$info: #76cbd6;
+$random: #444253;
+$hover: #cdcdcd;
+$upVote: #4caf50;
+$downVote: #ed2939;
+
+// $bg-secondary: #e4e6eb;
+// $bg: #f0f2f5;
+$notification-badge: #e41e3f;
+$primary-text: #050505;
+$accent: #1876f2;
+$primary-icon: #e4e6eb;
+// --primary-text: #E4E6EB;
+$secondary-text: #65676b;
